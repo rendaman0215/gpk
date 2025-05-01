@@ -1,8 +1,11 @@
 name: Node.js Package Release
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
